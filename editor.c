@@ -7,7 +7,12 @@
 */
 int main(void)
 {
-	printf("This is a simple text editor\n");
+	char c;
+
+	/* Entering raw mode - process each keypress as it comes in */
+
+	/* Read 1 char(byte) for stdin - continue as long as a char other than 'q' is read */
+	while (read(STDIN_FILENO, &c, 1) == 1 && c != 'q');
 
 	return (0);
 }
