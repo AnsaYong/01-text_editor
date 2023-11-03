@@ -1,5 +1,5 @@
-# TEXT EDITOR PROJECT
+# GEOLOGIST-FOCUSED TEXT EDITOR
 
-This is a personal project in which I intend to build my own text editor from scratch.
+This is a personal project in which I build a geologist-focused text editor from scratch.
 
 With progress, the functionalities will be documented here.

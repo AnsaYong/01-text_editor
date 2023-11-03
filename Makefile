@@ -3,7 +3,7 @@ CC = gcc
 CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89
 
 # Define the source and target files
-SRC = editor.c
+SRC = *.c
 TARGET = e
 
 # The default target, which builds the e executable

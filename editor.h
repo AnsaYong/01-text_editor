@@ -1,5 +1,14 @@
+#ifndef EDITOR_H
+#define EDITOR_H
+
 #include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
+#include <termios.h>
+#include <ctype.h>
+#include <errno.h>
+
+/***** DATA AND DATA TYPES *****/
 
 #define MAX_LINE 1024
 
@@ -11,7 +20,17 @@
 */
 typedef struct line_s
 {
-    char line[MAX_LINE];
-    struct line_s *next;
-    struct line_s *prev;
+	char line[MAX_LINE];
+	struct line_s *next;
+	struct line_s *prev;
 } line_t;
+
+/***** FUNCTION PROTOTYPES *****/
+/***** terminal.c ******/
+void disable_raw_mode(void);
+void enable_raw_mode(void);
+
+/*** error_handling.c ***/
+void terminate(const char *s);
+
+#endif /* EDITOR_H */
