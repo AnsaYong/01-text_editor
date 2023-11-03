@@ -1,7 +1,7 @@
 #include "editor.h"
 
 /**
- * main - the main entry point of the program
+ * main - the main entry point of the text editor
  *
  * Return: 0
 */
